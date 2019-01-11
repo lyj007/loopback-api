@@ -12,7 +12,6 @@ module.exports = function(LoginModel) {
             password: params.password
           });
           const regData = yield LoginModel.find({where});
-          console.log(regData);
           if (Object.keys(params).length) {
             if (Object.keys(regData).length) {
               cb(null, {message: '登录成功',status: 200, })
