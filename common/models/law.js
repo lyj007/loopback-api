@@ -31,7 +31,6 @@ module.exports = function(LawModel) {
               },
             ],
           };
-          console.log('filter--', filter);
           const data = yield LawModel.find(filter);
           const kong = {
             data: [],

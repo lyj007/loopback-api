@@ -12,7 +12,6 @@ module.exports = function(DetailModel) {
             });
           }
           const filter = {where};
-          console.log('filter--', filter);
           const data = yield DetailModel.find(filter);
           cb(null, data);
         } catch (e) {
@@ -29,7 +28,6 @@ module.exports = function(DetailModel) {
             name,
           });
           const filter = {where};
-          console.log('filter--', filter);
           const data = yield DetailModel.find(filter);
           cb(null, data);
         } catch (e) {
