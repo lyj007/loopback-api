@@ -1,0 +1,26 @@
+{
+  "name": "Person",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "名称"
+    },
+    "level": {
+      "type": "number",
+      "description": "等级"
+    },
+    "age": {
+      "type": "number",
+      "description": "年龄"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

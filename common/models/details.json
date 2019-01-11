@@ -1,0 +1,34 @@
+{
+  "name": "Details",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "名称"
+    },
+    "id": {
+      "type": "number",
+      "description": "id"
+    },
+    "details": {
+      "type": "string",
+      "description": "详情"
+    },
+    "code": {
+      "type": "string",
+      "description": "code"
+    },
+    "price": {
+      "type": "number",
+      "description": "价格"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Law",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "名称"
+    },
+    "id": {
+      "type": "number",
+      "description": "id"
+    },
+    "price": {
+      "type": "number",
+      "description": "价格"
+    },
+    "type": {
+      "type": "string",
+      "description": "类型"
+    },
+    "createtime": {
+      "type": "date",
+      "description": "时间"
+    },
+    "varieties": {
+      "type": "string",
+      "description": "品种"
+    },
+    "array": {
+      "type": "string",
+      "description": "数组"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "details": {
+      "type": "belongsTo",
+      "model": "Details",
+      "foreignKey": "detailsid"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Register",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "名称"
+    },
+    "id": {
+      "type": "number",
+      "description": "id"
+    },
+    "password": {
+      "type": "string",
+      "description": "密码"
+    },
+    "againpass": {
+      "type": "string",
+      "description": "确认密码"
+    },
+    "telephone": {
+      "type": "number",
+      "description": "电话号码"
+    },
+    "address": {
+      "type": "string",
+      "description": "地址"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

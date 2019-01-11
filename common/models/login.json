@@ -1,0 +1,26 @@
+{
+  "name": "Login",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "名称"
+    },
+    "id": {
+      "type": "number",
+      "description": "id"
+    },
+    "password": {
+      "type": "string",
+      "description": "密码"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
