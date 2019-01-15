@@ -15,7 +15,14 @@
   },
   "User": {
     "dataSource": "db",
-    "public": false
+    "public": true,
+    "acls": [
+      {
+        "principalType": "ROLE",
+        "principalId": "$everyone",
+        "permission": "ALLOW"
+      }
+    ]
   },
   "AccessToken": {
     "dataSource": "db",
