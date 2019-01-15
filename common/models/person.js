@@ -28,7 +28,7 @@ module.exports = function(PersonModel) {
       });
     },
   });
-  PersonModel.disableRemoteMethod('exists', true); // 屏蔽一个接口
+  PersonModel.disableRemoteMethodByName('exists'); // 屏蔽一个接口
   PersonModel.remoteMethod('list', {
     accepts: [
       {

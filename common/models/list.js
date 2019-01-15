@@ -15,6 +15,9 @@ module.exports = function(ListModel) {
         }
       });
     },
+    mymodel(id, options) {
+      console.log('---', options);
+    },
   });
   ListModel.remoteMethod('list', {
     accepts: [
@@ -25,6 +28,22 @@ module.exports = function(ListModel) {
       },
     ],
     http: {verb: 'get', path: '/list'},
+    returns: {arg: 'auth', type: 'string', root: true},
+  });
+  ListModel.remoteMethod('mymodel', {
+    accepts: [
+      {
+        arg: 'id',
+        type: 'number',
+        http: {source: 'query'},
+      },
+      {
+        arg: 'options',
+        type: 'object',
+        http: 'optionsFromRequest',  // 在loopback3.0以上才能用 options = { accessToken: xxxx} 可以在json中设置injectOptionsFromRemoteContext: true
+      },
+    ],
+    http: {verb: 'get', path: '/mymodel'},
     returns: {arg: 'auth', type: 'string', root: true},
   });
 };
